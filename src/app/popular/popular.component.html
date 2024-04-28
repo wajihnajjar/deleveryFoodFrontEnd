@@ -1,0 +1,18 @@
+<section class="gallery" id="gallery">
+
+    <h1 class="heading"> Most <span> Popular </span> food</h1>
+
+    <div class="box-container">
+
+        <div class="box" *ngFor = "let meal of meals">
+            <img src={{meal.image_food}} alt="">
+            <div class="content">
+                <h3>{{meal.food_name}}</h3>
+                <p>{{meal.Descr}}</p>
+                <button href="#" class="btn" (click)="AddOne($event)" >Order Now</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
